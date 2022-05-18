@@ -18,3 +18,7 @@ Slides: https://slides.com/fidoalliance/jan-2018-fido-seminar-webauthn-tutorial#
 ### About WebAuthn
 
 https://webauthn.guide/
+
+### Demo of the WebAuthn specification
+
+https://webauthn.io/
