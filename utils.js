@@ -46,24 +46,20 @@ let randomBase64URLBuffer = (len) => {
 let generateServerMakeCredRequest = (username, displayName, id) => {
     return {
         challenge: randomBase64URLBuffer(32),
-
         rp: {
             name: "FIDO Examples Corporation"
         },
-
         user: {
             id: id,
             name: username,
             displayName: displayName
         },
-
         attestation: 'direct',
-
         pubKeyCredParams: [
             {
-                type: "public-key", alg: -7 // "ES256" IANA COSE Algorithms registry
-            }
-        ]
+                type: "public-key", alg: -7, // "ES256" IANA COSE Algorithms registry
+            },
+        ],
     }
 }
 
